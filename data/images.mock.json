@@ -107,7 +107,7 @@
     "cta": {
         "title": "Own a Piece of Time",
         "subtitle": "Join collectors worldwide",
-        "background": "/luxury-bg.jpg",
+        "background": "/watch.avif",
         "button": {
             "label": "Explore Collection",
             "link": "/collections"
