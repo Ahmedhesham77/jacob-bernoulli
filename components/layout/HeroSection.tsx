@@ -97,10 +97,10 @@ export default function LuxuryHero() {
             {/* Cinematic Text */}
             <div className="absolute bottom-20 left-16 z-20 max-w-xl">
                 <h1 className="text-5xl font-semibold text-luxury-ivory">
-                    Timeless Precision
+                    Since 1839
                 </h1>
                 <p className="mt-4 text-luxury-ivory/70">
-                    Crafted for those who measure life in moments, not seconds.
+                    Where craftsmanship meets eternity. Every watch is a legacy.
                 </p>
             </div>
         </section>
@@ -108,12 +108,12 @@ export default function LuxuryHero() {
 }
 
 const images = [
-    "/watches/watch1.jpg",
-    "/watches/watch2.jpg",
-    "/watches/watch3.jpg",
-    "/watches/watch4.jpg",
-    "/watches/watch5.jpg",
-    "/watches/watch6.jpg",
-    "/watches/watch7.jpg",
-    "/watches/watch8.jpg"
+    "/watches/patek1.jpg",
+    "/watches/patek2.jpg",
+    "/watches/patek3.jpg",
+    "/watches/patek4.jpg",
+    "/watches/patek5.jpg",
+    "/watches/patek6.jpg",
+    "/watches/patek7.jpg",
+    "/watches/patek8.jpg"
 ]
