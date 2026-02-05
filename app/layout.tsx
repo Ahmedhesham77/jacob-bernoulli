@@ -6,7 +6,7 @@ import WelcomeLoader from "@/components/layout/WelcomeLoader"
 import Navbar from "@/components/layout/Navbar"
 import { preloadImages } from "@/lib/preload"
 import LenisProvider from "@/components/layout/LenisProveider"
-import images from "@/data/images.mock.json"
+import featured from "@/data/images.mock.json"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 
@@ -23,19 +23,30 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true)
 
+  // 🔹 شرط التحميل (ولا نلمس أي شيء غيره)
   useEffect(() => {
-    const imageSources = [
-      images.hero.image,
-      ...images.story.map(s => s.image),
-      ...images.featured.items.map(i => i.image),
-      images.cta.background,
-    ]
+    let mounted = true
 
-    // ⏱️ تحميل الصور + حد أدنى للعرض
-    Promise.all([
-      preloadImages(imageSources),
-      new Promise(resolve => setTimeout(resolve, 1500)),
-    ]).then(() => setLoading(false))
+    const loadAssets = async () => {
+      try {
+        const posters = featured.featured.items
+          .filter(item => item.media.type === "video")
+          .map(item => item.media.poster)
+
+        await preloadImages(posters)
+
+      } catch (err) {
+        console.error("Preload error:", err)
+      } finally {
+        if (mounted) setLoading(false)
+      }
+    }
+
+    loadAssets()
+
+    return () => {
+      mounted = false
+    }
   }, [])
 
   return (
@@ -52,8 +63,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {!loading && (
             <main className="h-full w-full">
               <Navbar />
-              <LenisProvider> {children}</LenisProvider>
-
+              <LenisProvider>{children}</LenisProvider>
             </main>
           )}
         </div>

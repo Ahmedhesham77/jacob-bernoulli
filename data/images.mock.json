@@ -1,116 +1,46 @@
 {
-    "hero": {
-        "id": "hero-main",
-        "title": "Time is a Legacy",
-        "subtitle": "Luxury watches & rare antiques",
-        "image": "/hero-watch.avif",
-        "alt": "Luxury mechanical watch",
-        "overlay": true,
-        "theme": "dark",
-        "animation": {
-            "type": "framer",
-            "variant": "fade-up",
-            "duration": 1
-        }
-    },
-    "story": [
-        {
-            "id": "origin",
-            "title": "Born From Precision",
-            "description": "Mechanical mastery crafted by generations of watchmakers.",
-            "image": "/watch.avif",
-            "alt": "Vintage watch mechanism",
-            "layout": "image-left",
-            "animation": {
-                "type": "gsap",
-                "trigger": "scroll",
-                "effect": "reveal",
-                "scrub": true
-            }
-        },
-        {
-            "id": "heritage",
-            "title": "A Story in Every Tick",
-            "description": "Each piece tells a story of time, patience, and art.",
-            "image": "/watch.avif",
-            "alt": "Antique pocket watch",
-            "layout": "image-right",
-            "animation": {
-                "type": "gsap",
-                "trigger": "scroll",
-                "effect": "parallax",
-                "scrub": true
-            }
-        }
-    ],
     "featured": {
-        "title": "Curated Collection",
         "items": [
             {
                 "id": "watch-001",
-                "image": "/product.avif",
-                "alt": "Luxury Swiss watch",
-                "badge": "Rare",
-                "cta": "View Details"
+                "media": {
+                    "type": "video",
+                    "src": "/video1.mp4",
+                    "poster": "/product1.avif"
+                }
             },
             {
                 "id": "watch-002",
-                "image": "/product2.avif",
-                "alt": "Antique gold watch",
-                "badge": "Limited",
-                "cta": "View Details"
+                "media": {
+                    "type": "video",
+                    "src": "/video2.mp4",
+                    "poster": "/product2.avif"
+                }
             },
             {
                 "id": "watch-003",
-                "image": "/product3.avif",
-                "alt": "Classic leather strap watch",
-                "badge": "Exclusive",
-                "cta": "View Details"
+                "media": {
+                    "type": "video",
+                    "src": "/video3.mp4",
+                    "poster": "/product3.avif"
+                }
             },
             {
                 "id": "watch-004",
-                "image": "/product4.avif",
-                "alt": "Vintage chronograph watch",
-                "badge": "Collector's Item",
-                "cta": "View Details"
+                "media": {
+                    "type": "video",
+                    "src": "/video4.mp4",
+                    "poster": "/product4.avif"
+                }
             },
             {
                 "id": "watch-005",
-                "image": "/product5.avif",
-                "alt": "Elegant dress watch",
-                "badge": "New Arrival",
-                "cta": "View Details"
-            },
-            {
-                "id": "watch-006",
-                "image": "/product6.avif",
-                "alt": "Sporty dive watch",
-                "badge": "Bestseller",
-                "cta": "View Details"
-            },
-            {
-                "id": "watch-007",
-                "image": "/product7.avif",
-                "alt": "Minimalist modern watch",
-                "badge": "Trending",
-                "cta": "View Details"
-            },
-            {
-                "id": "watch-008",
-                "image": "/product8.avif",
-                "alt": "Luxury skeleton watch",
-                "badge": "Featured",
-                "cta": "View Details"
+                "media": {
+                    "type": "video",
+                    "src": "/video5.mp4",
+                    "poster": "/product5.avif"
+                }
             }
         ]
-    },
-    "cta": {
-        "title": "Own a Piece of Time",
-        "subtitle": "Join collectors worldwide",
-        "background": "/watch.avif",
-        "button": {
-            "label": "Explore Collection",
-            "link": "/collections"
-        }
     }
 }
