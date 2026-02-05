@@ -17,8 +17,8 @@ const IMAGES_CONFIG = {
     { src: "/video5.mp4", type: "side", position: "left-full" },
   ],
   bottom: [
-    { src: "/video6.mp4", type: "side", position: "left-1/2" },
-    { src: "/video7.mp4", type: "side", position: "right-1/2" },
+    { src: "/video2.mp4", type: "side", position: "left-1/2" },
+    { src: "/video1.mp4", type: "side", position: "right-1/2" },
   ],
 };
 
@@ -130,7 +130,7 @@ export default function Home() {
             </div>
 
             {/* ================= BOTTOM ================= */}
-            <div data-section="bottom" className="absolute h-screen w-screen top-full">
+            <div data-section="bottom" className="absolute h-screen w-screen bottom-full">
               {IMAGES_CONFIG.bottom.map((item, index) => (
                 <div key={`bottom-${index}`} className={`absolute ${item.position} w-screen h-screen`}>
                   <video
