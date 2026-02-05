@@ -12,8 +12,8 @@ const IMAGES_CONFIG = {
     { src: "https://patek-res.cloudinary.com/video/upload/f_auto:video/dfsmedia/0906caea301d42b3b8bd23bd656d1711/221033-source/pp-7300-1200a-011-banner-screen-16-9", type: "side", position: "right-1/2" },
   ],
   center: [
-    { src: "https://patek-res.cloudinary.com/video/upload/f_auto:video/dfsmedia/0906caea301d42b3b8bd23bd656d1711/220764-source/pp-4997-200g-001-banner-screen-16-9", type: "side", position: "right-full" },
-    { src: "https://patek-res.cloudinary.com/video/upload/f_auto:video/dfsmedia/0906caea301d42b3b8bd23bd656d1711/220821-source/pp-5905-1a-001-banner-screen-16-9", type: "main", position: "" },
+    { src: "https://patek-res.cloudinary.com/video/upload/f_auto:video/dfsmedia/0906caea301d42b3b8bd23bd656d1711/220821-source/pp-5905-1a-001-banner-screen-16-9", type: "side", position: "right-full" },
+    { src: "https://patek-res.cloudinary.com/video/upload/f_auto:video/dfsmedia/0906caea301d42b3b8bd23bd656d1711/220764-source/pp-4997-200g-001-banner-screen-16-9", type: "main", position: "" },
     { src: "https://patek-res.cloudinary.com/video/upload/f_auto:video/dfsmedia/0906caea301d42b3b8bd23bd656d1711/220820-source/pp-5905r-010-banner-screen-16-9", type: "side", position: "left-full" },
   ],
   bottom: [
