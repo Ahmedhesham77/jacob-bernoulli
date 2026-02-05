@@ -5,6 +5,7 @@ import type { ReactNode } from "react"
 import WelcomeLoader from "@/components/layout/WelcomeLoader"
 import Navbar from "@/components/layout/Navbar"
 import { preloadImages } from "@/lib/preload"
+import LenisProvider from "@/components/layout/LenisProveider"
 import images from "@/data/images.mock.json"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
@@ -40,7 +41,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full bg-[#0a0a0a] text-white overflow-x-hidden`}
       >
         {/* Container كامل الشاشة */}
         <div className="relative h-screen w-screen">
@@ -51,7 +52,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {!loading && (
             <main className="h-full w-full">
               <Navbar />
-              {children}
+              <LenisProvider> {children}</LenisProvider>
+
             </main>
           )}
         </div>
