@@ -298,7 +298,31 @@
 
 
   /* ===== Accent Cinematic Gradients ===== */
+/* تنسيق الشبكة الأساسي */
+.gallery-layout {
+  grid-template-columns: 1fr 1.5fr 1fr; /* العمود الأوسط أعرض قليلاً للفخامة */
+  grid-template-rows: repeat(3, 1fr);
+}
 
+/* في الشاشات الصغيرة نجعل الأعمدة متساوية */
+@media (max-width: 768px) {
+  .gallery-layout {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+/* تأثير التوهج عند الـ Hover على الكرت */
+[data-zoom-item]:hover {
+  box-shadow: 0 0 40px rgba(193, 155, 118, 0.15); /* توهج ذهبي خفيف */
+  border: 1px solid rgba(193, 155, 118, 0.3);
+}
+
+/* تخصيص الخطوط لتشبه ساعات Patek Philippe */
+h3 {
+  font-family: 'Playfair Display', serif; /* تأكد من استدعاء الخط من Google Fonts */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
   --gradient-emerald-glow:
     linear-gradient(
       135deg,
