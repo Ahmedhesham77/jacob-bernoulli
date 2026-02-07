@@ -23,7 +23,6 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true)
 
-  // 🔹 شرط التحميل (ولا نلمس أي شيء غيره)
   useEffect(() => {
     let mounted = true
 
